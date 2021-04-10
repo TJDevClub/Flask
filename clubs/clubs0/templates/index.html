@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Register for TJ Clubs!</h1>
+<form action="/register" method="post" />
+	<input name="name" placeholder="Name" type="text" />
+	<select name="county">
+		<option disabled selected value="">County</option>
+		<option value="FCPS">FCPS</option>
+		<option value="LCPS">LCPS</option>
+		<option value="PWCS">PWCS</option>
+		<option value="APS">APS</option>
+		<option value="Falls Church City">Falls Church City</option>
+	</select>
+	<input type="submit" value="Register" />
+</form>
+{% endblock %}
